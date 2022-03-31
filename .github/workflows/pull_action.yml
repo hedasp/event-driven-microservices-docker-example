@@ -19,6 +19,17 @@ jobs:
      # - name: authentication
      ## manglar testar
      #   working-directory: ./services/authentication/
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: services-articles-management
+          path: |
+            services/articles-management/coverage
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: local/docker/reports/code-coverage.html   
 
       - name: events-management
         working-directory: ./services/events-management/
