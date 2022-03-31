@@ -13,6 +13,20 @@
   },
   "author": "Rithin Chalumuri",
   "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "/local/docker/reports",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": -10
+      }
+    }
+  },
   "dependencies": {
     "amqp-ts-async": "^1.3.7",
     "dotenv": "^6.2.0",

@@ -16,6 +16,8 @@
   "jest": {
     "testEnvironment": "node",
     "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "/local/docker/reports",
     "coverageThreshold": {
       "global": {
         "branches": 100,
