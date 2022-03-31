@@ -40,6 +40,7 @@ jobs:
           npm install eslint -DE
           npm run lint
           npm test
+  #
   #    - uses: artiomtr/jest-coverage-report-action@v2.0-rc.5
   #     with:
   #        working-directory: ./services
