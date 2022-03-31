@@ -70,3 +70,7 @@ services:
   rabbitmq:
     container_name: rabbitmq
     image: rabbitmq:3.7.4
+    
+    
+## utvid med image for f.eks nginxproxy og let's encrypt. 
+## ville nok sett på noko tilsvarande: https://www.sbirla.org/post/how-to-setup-a-nginx-reverse-proxy-with-letsencrypt-for-microservices/
